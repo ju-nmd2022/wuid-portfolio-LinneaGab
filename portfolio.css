@@ -39,19 +39,62 @@ header {
     color: rgb(25, 89, 229);
 }
 
-img {
-    size: 10%;
-    padding: 10px;
-    align-items: center;
-}
-
 h2 {
     display: flex;
     justify-content: center;
 }
 
 .container {
-    position: relative;
-    width: 50%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 10px;
+    row-gap: 40px;
+    justify-content: space-evenly;
+    margin-top: 5rem;
+   
+
   }
+
+  .imagesky {
+   
+    width: 200px;
+    border-radius: 10px;
+
+  }
+
+  .imagebird {
+   
+    width: 200px;
+    border-radius: 10px;
+
+  }
+
+  .imagebranding {
+   
+    width: 200px;
+    border-radius: 10px;
+
+  }
+
+  .imageflyer {
+   
+    width: 200px;
+    border-radius: 10px;
+
+  }
+
+  .imagebook {
+   
+    width: 200px;
+    border-radius: 10px;
+
+  }
+
+
+
+
+
+
+
+
 
