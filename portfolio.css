@@ -96,6 +96,17 @@ h2 {
     padding: 10px;
   }
 
+@media screen and (max-width: 560px) {
+  .container {
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .nav_links li {
+    display: inline-block;
+    padding: 0px 5px;
+  }
+}
 
 
 

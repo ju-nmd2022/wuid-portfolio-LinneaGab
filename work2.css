@@ -40,8 +40,8 @@ header {
   color: rgb(25, 89, 229);
 }
 
-h1 {
-  font-family: Georgia, "Times New Roman", Times, serif;
+h2 {
+  display: flex;
   font-size: 600;
   display: flex;
   justify-content: center;
@@ -62,4 +62,26 @@ p {
   margin-top: -1rem;
   width: 15%;
   border-radius: 10px;
+}
+
+@media screen and (max-width:560px) {
+  .nav_links li {
+    display:inline-block;
+    padding:0px 5px;
+  }
+  
+  .imagesky {
+    width: 40%;
+  }
+
+  h2 {
+    padding-bottom: 30px;
+  }
+
+  p{
+    display:flex;
+    justify-content: center;
+    padding: 10px;
+    padding-left: 10%;
+  }
 }

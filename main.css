@@ -68,3 +68,19 @@ li {
   width: 15%;
   border-radius: 10px;
 }
+
+@media screen and (max-width:560px) {
+  .nav_links li {
+    display:inline-block;
+    padding:0px 5px;
+  }
+
+  .profile-image {
+    display:block;
+    width: 30%;
+  }
+
+  p {
+    padding: 40px;
+  }
+}
