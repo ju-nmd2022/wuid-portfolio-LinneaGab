@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   background-color: antiquewhite;
+
 }
 
 li,
@@ -16,71 +17,91 @@ a {
   text-decoration: none;
 }
 
-header {
-  font-family: "Montserrat", sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 30px 10%;
-}
-
 .nav_links {
-  list-style: none;
-}
-
-.nav_links li {
-  display: inline-block;
-  padding: 0px 20px;
-}
-
-.nav_links li a {
-  transition: all 0.3s ease 0s;
-}
-
-.nav_links li a:hover {
-  color: rgb(25, 89, 229);
-}
-
-h1,
-h2,
-h3,
-h4 {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 600;
-  display: flex;
-  justify-content: center;
-  padding: 30px 10%;
-}
-
-p,
-li {
-  font-family: "Montserrat", sans-serif;
-  display: flex;
-  justify-content: center;
-}
-
-.profile-image {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 1.5rem;
-  margin-top: -1rem;
-  width: 15%;
-  border-radius: 10px;
-}
-
-@media screen and (max-width:560px) {
+    list-style: none;
+  }
+  
   .nav_links li {
-    display:inline-block;
-    padding:0px 5px;
+    display: inline-block;
+    padding: 0px 20px;
+  }
+  
+  .nav_links li a {
+    transition: all 0.3s ease 0s;
+  }
+  
+  .nav_links li a:hover {
+    color: rgb(25, 89, 229);
   }
 
-  .profile-image {
-    display:block;
-    width: 30%;
+  header {
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10%;
+    animation-name: text;
+    position: relative;
   }
 
-  p {
-    padding: 40px;
+  h3 {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 600;
+    display: flex;
+    justify-content: center;
+    padding: 30px 10%;
+    animation-name: fade;
+    animation-duration: 3s;
+    animation-iteration-count:initial;
+    animation-timing-function: linear;
   }
-}
+
+  .frog {
+    display: block;
+    width: auto;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    animation-name: bounce;
+    animation-duration: 3s;
+    animation-iteration-count:initial;
+    animation-timing-function: linear;
+  }
+
+  @keyframes bounce {
+    0% {
+        transform: translateY(-55vh) scaleX(0.7);
+    }
+    40% {
+        transform: scaleX(0.7) scaleY(1.3)
+    }
+    50% {
+        transform: translateY(0px) scaleX(1.2) scaleY(1);
+    }
+    55% {
+        transform: translateY(0px) scaleX(1) scaleY(1);
+    }
+    100% {
+        transform: translateY(0px) scaleX(1) scaleY(1);
+    }
+  }
+
+  @keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+
+  @media screen and (max-width:560px) {
+    .nav_links li {
+      display:inline-block;
+      padding:0px 1.9px;
+    }
+  }
